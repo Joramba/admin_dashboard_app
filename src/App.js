@@ -24,8 +24,10 @@ import {
 } from "./pages";
 import "./App.css";
 
+import { useStateContext } from "./context/contextProvider";
+
 const App = () => {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
 
   return (
     <div>
